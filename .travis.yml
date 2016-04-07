@@ -1,0 +1,17 @@
+sudo: false
+language: node_js
+cache:
+  directories:
+  - node_modules
+node_js:
+- 4.3
+- stable
+before_install:
+- npm i -g npm
+script:
+- npm t
+after_success:
+- travis-after-all && npm run semantic-release
+env:
+  global:
+    secure: Meedc7+L7R2u85wKQXvcjOoudx6Zkfym/7ZH+FeyBz3HKQmxY28bTqYN8tGemq4F6ubZnaq7tVGkouGD/BwIKevJloyha9DZ/KCfBpar5ToRIZh+I9QSf0FVEWJ+WNTn2Yp+BJA2F+rZN7Qa97eMdHsYNag/hL/c/bMWGeTU25iXPQGiUpB0JoMRjA05rr17kCegfaZBBBRjn7y9bC0Gj8bHkY3LSD8iD7XJpb2drQNCGaipGm5n2KKVmcbRgMOVlxPWIQFEcZvGWgJC3d03R7UTTruydccBUhs6/0Zp52H2UAz22YpZNbGAi/i4jYfTYAMIki0H4TiBlXhrl6t/71L24kCyQaku3RqMiMeun9tjit41UEolC2e4uC2MrwEOqxf6w722TBIIrEZVtRDS9CSYquZRwZf20USHk5JK8g2H1SP0ykDXC3vy1BxQVoORIpKnmcfxochq3AJhjIvadmqQnghzRxHOs5sS9dr+QFjar0vassFlL/LySUbqSvGuAZ/Oa8tGzqRQV+Y2rjJjD11wh22CDg0jh892FaMOchRCEe+lFlKwwkwQYUyBW9RRNSncsuXOKA4nOgiz5OLXbnPfKUBmhWl9GneJvOJi3kNmlV2JMUz8dDSrYTQyODYn6yHpAYl/tmD4DqhpKUKfjFmLh2diCZg7pWCawTV7E4Y=
