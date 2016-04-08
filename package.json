@@ -1,10 +1,10 @@
 {
-  "name": "@economist/component-utility-dti-isnumeric",
+  "name": "@economist/utility-dti-isnumeric",
   "version": "0.0.0-development",
   "description": "",
-  "homepage": "https://github.com/economist-components/component-utility-dti-isnumeric",
+  "homepage": "https://github.com/economist-components/utility-dti-isnumeric",
   "bugs": {
-    "url": "https://github.com/economist-components/component-utility-dti-isnumeric/issues"
+    "url": "https://github.com/economist-components/utility-dti-isnumeric/issues"
   },
   "license": "MIT",
   "files": [
